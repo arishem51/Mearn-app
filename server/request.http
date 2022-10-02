@@ -2,8 +2,8 @@ POST  http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-    "username":"ananhpv",
-    "password":"ananhpv"
+    "username":"hung",
+    "password":"hung123"
 }
 
 ###
@@ -26,3 +26,28 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzM5N
     "description": "I want to learn React",
     "title": "React"
 }
+
+###
+
+GET http://localhost:5000/api/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzM3ZjdlZGMyMTAyOTc3MmUyNDBmNjEiLCJpYXQiOjE2NjQ3MTA3MTF9.eJn08MU2H2KqfJG3DkYj5NdmJz4wgkyWEieHYfYN3pc
+
+
+###
+
+PUT http://localhost:5000/api/post/633965694c7f839876c9350f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzM3ZjdlZGMyMTAyOTc3MmUyNDBmNjEiLCJpYXQiOjE2NjQ3MTA3MTF9.eJn08MU2H2KqfJG3DkYj5NdmJz4wgkyWEieHYfYN3pc
+Content-Type: application/json
+
+{
+    "title": "Vue123",
+    "description": "This is my Vue course123",
+    "status":"Doing"
+}
+
+
+###
+
+DELETE  http://localhost:5000/api/post/633965694c7f839876c9350f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzM3ZjdlZGMyMTAyOTc3MmUyNDBmNjEiLCJpYXQiOjE2NjQ3MTA3MTF9.eJn08MU2H2KqfJG3DkYj5NdmJz4wgkyWEieHYfYN3pc
+
